@@ -10,3 +10,15 @@ C:\Users\francisco.ruiz\Documents\Francisco\Own\PatronesDiseno\Tools\obj\Debug\n
 C:\Users\francisco.ruiz\Documents\Francisco\Own\PatronesDiseno\Tools\obj\Debug\net5.0\Tools.dll
 C:\Users\francisco.ruiz\Documents\Francisco\Own\PatronesDiseno\Tools\obj\Debug\net5.0\ref\Tools.dll
 C:\Users\francisco.ruiz\Documents\Francisco\Own\PatronesDiseno\Tools\obj\Debug\net5.0\Tools.pdb
+D:\VisualStudio2019\DesignPatterns\DesignPatternsPractice\Tools\bin\Debug\net5.0\Tools.deps.json
+D:\VisualStudio2019\DesignPatterns\DesignPatternsPractice\Tools\bin\Debug\net5.0\Tools.dll
+D:\VisualStudio2019\DesignPatterns\DesignPatternsPractice\Tools\bin\Debug\net5.0\ref\Tools.dll
+D:\VisualStudio2019\DesignPatterns\DesignPatternsPractice\Tools\bin\Debug\net5.0\Tools.pdb
+D:\VisualStudio2019\DesignPatterns\DesignPatternsPractice\Tools\obj\Debug\net5.0\Tools.csproj.AssemblyReference.cache
+D:\VisualStudio2019\DesignPatterns\DesignPatternsPractice\Tools\obj\Debug\net5.0\Tools.GeneratedMSBuildEditorConfig.editorconfig
+D:\VisualStudio2019\DesignPatterns\DesignPatternsPractice\Tools\obj\Debug\net5.0\Tools.AssemblyInfoInputs.cache
+D:\VisualStudio2019\DesignPatterns\DesignPatternsPractice\Tools\obj\Debug\net5.0\Tools.AssemblyInfo.cs
+D:\VisualStudio2019\DesignPatterns\DesignPatternsPractice\Tools\obj\Debug\net5.0\Tools.csproj.CoreCompileInputs.cache
+D:\VisualStudio2019\DesignPatterns\DesignPatternsPractice\Tools\obj\Debug\net5.0\Tools.dll
+D:\VisualStudio2019\DesignPatterns\DesignPatternsPractice\Tools\obj\Debug\net5.0\ref\Tools.dll
+D:\VisualStudio2019\DesignPatterns\DesignPatternsPractice\Tools\obj\Debug\net5.0\Tools.pdb
