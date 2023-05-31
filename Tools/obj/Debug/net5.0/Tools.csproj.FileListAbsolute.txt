@@ -1,0 +1,12 @@
+C:\Users\francisco.ruiz\Documents\Francisco\Own\PatronesDiseno\Tools\bin\Debug\net5.0\Tools.deps.json
+C:\Users\francisco.ruiz\Documents\Francisco\Own\PatronesDiseno\Tools\bin\Debug\net5.0\Tools.dll
+C:\Users\francisco.ruiz\Documents\Francisco\Own\PatronesDiseno\Tools\bin\Debug\net5.0\ref\Tools.dll
+C:\Users\francisco.ruiz\Documents\Francisco\Own\PatronesDiseno\Tools\bin\Debug\net5.0\Tools.pdb
+C:\Users\francisco.ruiz\Documents\Francisco\Own\PatronesDiseno\Tools\obj\Debug\net5.0\Tools.csproj.AssemblyReference.cache
+C:\Users\francisco.ruiz\Documents\Francisco\Own\PatronesDiseno\Tools\obj\Debug\net5.0\Tools.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\francisco.ruiz\Documents\Francisco\Own\PatronesDiseno\Tools\obj\Debug\net5.0\Tools.AssemblyInfoInputs.cache
+C:\Users\francisco.ruiz\Documents\Francisco\Own\PatronesDiseno\Tools\obj\Debug\net5.0\Tools.AssemblyInfo.cs
+C:\Users\francisco.ruiz\Documents\Francisco\Own\PatronesDiseno\Tools\obj\Debug\net5.0\Tools.csproj.CoreCompileInputs.cache
+C:\Users\francisco.ruiz\Documents\Francisco\Own\PatronesDiseno\Tools\obj\Debug\net5.0\Tools.dll
+C:\Users\francisco.ruiz\Documents\Francisco\Own\PatronesDiseno\Tools\obj\Debug\net5.0\ref\Tools.dll
+C:\Users\francisco.ruiz\Documents\Francisco\Own\PatronesDiseno\Tools\obj\Debug\net5.0\Tools.pdb
