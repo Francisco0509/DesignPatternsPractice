@@ -118,3 +118,5 @@ C:\Users\francisco.ruiz\Documents\Francisco\Own\PatronesDiseno\DesignPatternsASP
 C:\Users\francisco.ruiz\Documents\Francisco\Own\PatronesDiseno\DesignPatternsASP\bin\Debug\net5.0\DesignPatterns.Repository.dll
 C:\Users\francisco.ruiz\Documents\Francisco\Own\PatronesDiseno\DesignPatternsASP\bin\Debug\net5.0\DesignPatterns.Models.pdb
 C:\Users\francisco.ruiz\Documents\Francisco\Own\PatronesDiseno\DesignPatternsASP\bin\Debug\net5.0\DesignPatterns.Repository.pdb
+C:\Users\francisco.ruiz\Documents\Francisco\Own\PatronesDiseno\DesignPatternsASP\obj\Debug\net5.0\Razor\Views\Beer\Index.cshtml.g.cs
+C:\Users\francisco.ruiz\Documents\Francisco\Own\PatronesDiseno\DesignPatternsASP\obj\Debug\net5.0\Razor\Views\Beer\Add.cshtml.g.cs

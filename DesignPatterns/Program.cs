@@ -1,6 +1,7 @@
 ﻿//using DesignPatterns.DependencyInjectionPattern;
 using DesignPatterns.Models;
 using DesignPatterns.RepositoryPattern;
+using DesignPatterns.UnitOfWorkPattern;
 using System;
 using System.Linq;
 
@@ -64,16 +65,39 @@ namespace DesignPatterns
                 //    Console.WriteLine($"Cerveza {item.Name} de estilo {item.Style}");
                 //}
 
-                var brandRepository = new Repository<Brand>(context);
+                //var brandRepository = new Repository<Brand>(context);
 
-                var brand = new Brand();
-                brand.Name = "Fuller";
-                brandRepository.Add(brand);
-                brandRepository.Save();
-                foreach (var item in brandRepository.Get())
+                //var brand = new Brand();
+                //brand.Name = "Fuller";
+                //brandRepository.Add(brand);
+                //brandRepository.Save();
+                //foreach (var item in brandRepository.Get())
+                //{
+                //    Console.WriteLine($"La nueva marca de cerveza {item.Name}");
+                //}
+
+                /************/
+                /*UnitOfWork*/
+                /************/
+                var unitOfWork = new UnitOfWork(context);
+                var beers = unitOfWork.Beers;
+                var beer = new Beer()
                 {
-                    Console.WriteLine($"La nueva marca de cerveza {item.Name}");
-                }
+                    Name = "Fuller",
+                    Style = "Porter"
+                };
+
+                beers.Add(beer);
+
+                var brands = unitOfWork.Brands;
+                var brand = new Brand()
+                {
+                    Name = "Fuller"
+                };
+
+                brands.Add(brand);
+
+                unitOfWork.Save();
             }
 
             Console.ReadKey();
