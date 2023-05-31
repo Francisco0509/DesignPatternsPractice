@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\VisualStudio2019\\DesignPatterns\\DesignPatternsPractice\\DesignPatternsASP\\DesignPatternsASP.csproj": {}
+    "C:\\Users\\francisco.ruiz\\Documents\\Francisco\\Own\\PatronesDiseno\\DesignPatternsASP\\DesignPatternsASP.csproj": {}
   },
   "projects": {
-    "D:\\VisualStudio2019\\DesignPatterns\\DesignPatternsPractice\\DesignPatternsASP\\DesignPatternsASP.csproj": {
+    "C:\\Users\\francisco.ruiz\\Documents\\Francisco\\Own\\PatronesDiseno\\DesignPatterns.Models\\DesignPatterns.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\VisualStudio2019\\DesignPatterns\\DesignPatternsPractice\\DesignPatternsASP\\DesignPatternsASP.csproj",
-        "projectName": "DesignPatternsASP",
-        "projectPath": "D:\\VisualStudio2019\\DesignPatterns\\DesignPatternsPractice\\DesignPatternsASP\\DesignPatternsASP.csproj",
-        "packagesPath": "C:\\Users\\fruiz\\.nuget\\packages\\",
-        "outputPath": "D:\\VisualStudio2019\\DesignPatterns\\DesignPatternsPractice\\DesignPatternsASP\\obj\\",
+        "projectUniqueName": "C:\\Users\\francisco.ruiz\\Documents\\Francisco\\Own\\PatronesDiseno\\DesignPatterns.Models\\DesignPatterns.Models.csproj",
+        "projectName": "DesignPatterns.Models",
+        "projectPath": "C:\\Users\\francisco.ruiz\\Documents\\Francisco\\Own\\PatronesDiseno\\DesignPatterns.Models\\DesignPatterns.Models.csproj",
+        "packagesPath": "C:\\Users\\francisco.ruiz\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\francisco.ruiz\\Documents\\Francisco\\Own\\PatronesDiseno\\DesignPatterns.Models\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\fruiz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\francisco.ruiz\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -25,16 +25,159 @@
           "net5.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "C:\\Program Files\\dotnet\\library-packs": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "C:\\Users\\francisco.ruiz\\Documents\\Visual Studio 2019\\Projects\\ProdBlinds_Fco\\ProdBlinds\\bin": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://www.nuget.org": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.17, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.416\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\francisco.ruiz\\Documents\\Francisco\\Own\\PatronesDiseno\\DesignPatterns.Repository\\DesignPatterns.Repository.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\francisco.ruiz\\Documents\\Francisco\\Own\\PatronesDiseno\\DesignPatterns.Repository\\DesignPatterns.Repository.csproj",
+        "projectName": "DesignPatterns.Repository",
+        "projectPath": "C:\\Users\\francisco.ruiz\\Documents\\Francisco\\Own\\PatronesDiseno\\DesignPatterns.Repository\\DesignPatterns.Repository.csproj",
+        "packagesPath": "C:\\Users\\francisco.ruiz\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\francisco.ruiz\\Documents\\Francisco\\Own\\PatronesDiseno\\DesignPatterns.Repository\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\francisco.ruiz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "C:\\Users\\francisco.ruiz\\Documents\\Visual Studio 2019\\Projects\\ProdBlinds_Fco\\ProdBlinds\\bin": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://www.nuget.org": {}
         },
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\VisualStudio2019\\DesignPatterns\\DesignPatternsPractice\\Tools\\Tools.csproj": {
-                "projectPath": "D:\\VisualStudio2019\\DesignPatterns\\DesignPatternsPractice\\Tools\\Tools.csproj"
+              "C:\\Users\\francisco.ruiz\\Documents\\Francisco\\Own\\PatronesDiseno\\DesignPatterns.Models\\DesignPatterns.Models.csproj": {
+                "projectPath": "C:\\Users\\francisco.ruiz\\Documents\\Francisco\\Own\\PatronesDiseno\\DesignPatterns.Models\\DesignPatterns.Models.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.416\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\francisco.ruiz\\Documents\\Francisco\\Own\\PatronesDiseno\\DesignPatternsASP\\DesignPatternsASP.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\francisco.ruiz\\Documents\\Francisco\\Own\\PatronesDiseno\\DesignPatternsASP\\DesignPatternsASP.csproj",
+        "projectName": "DesignPatternsASP",
+        "projectPath": "C:\\Users\\francisco.ruiz\\Documents\\Francisco\\Own\\PatronesDiseno\\DesignPatternsASP\\DesignPatternsASP.csproj",
+        "packagesPath": "C:\\Users\\francisco.ruiz\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\francisco.ruiz\\Documents\\Francisco\\Own\\PatronesDiseno\\DesignPatternsASP\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\francisco.ruiz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "C:\\Users\\francisco.ruiz\\Documents\\Visual Studio 2019\\Projects\\ProdBlinds_Fco\\ProdBlinds\\bin": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://www.nuget.org": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\francisco.ruiz\\Documents\\Francisco\\Own\\PatronesDiseno\\DesignPatterns.Models\\DesignPatterns.Models.csproj": {
+                "projectPath": "C:\\Users\\francisco.ruiz\\Documents\\Francisco\\Own\\PatronesDiseno\\DesignPatterns.Models\\DesignPatterns.Models.csproj"
+              },
+              "C:\\Users\\francisco.ruiz\\Documents\\Francisco\\Own\\PatronesDiseno\\DesignPatterns.Repository\\DesignPatterns.Repository.csproj": {
+                "projectPath": "C:\\Users\\francisco.ruiz\\Documents\\Francisco\\Own\\PatronesDiseno\\DesignPatterns.Repository\\DesignPatterns.Repository.csproj"
+              },
+              "C:\\Users\\francisco.ruiz\\Documents\\Francisco\\Own\\PatronesDiseno\\Tools\\Tools.csproj": {
+                "projectPath": "C:\\Users\\francisco.ruiz\\Documents\\Francisco\\Own\\PatronesDiseno\\Tools\\Tools.csproj"
               }
             }
           }
@@ -70,20 +213,20 @@
         }
       }
     },
-    "D:\\VisualStudio2019\\DesignPatterns\\DesignPatternsPractice\\Tools\\Tools.csproj": {
+    "C:\\Users\\francisco.ruiz\\Documents\\Francisco\\Own\\PatronesDiseno\\Tools\\Tools.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\VisualStudio2019\\DesignPatterns\\DesignPatternsPractice\\Tools\\Tools.csproj",
+        "projectUniqueName": "C:\\Users\\francisco.ruiz\\Documents\\Francisco\\Own\\PatronesDiseno\\Tools\\Tools.csproj",
         "projectName": "Tools",
-        "projectPath": "D:\\VisualStudio2019\\DesignPatterns\\DesignPatternsPractice\\Tools\\Tools.csproj",
-        "packagesPath": "C:\\Users\\fruiz\\.nuget\\packages\\",
-        "outputPath": "D:\\VisualStudio2019\\DesignPatterns\\DesignPatternsPractice\\Tools\\obj\\",
+        "projectPath": "C:\\Users\\francisco.ruiz\\Documents\\Francisco\\Own\\PatronesDiseno\\Tools\\Tools.csproj",
+        "packagesPath": "C:\\Users\\francisco.ruiz\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\francisco.ruiz\\Documents\\Francisco\\Own\\PatronesDiseno\\Tools\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\fruiz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\francisco.ruiz\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -91,9 +234,10 @@
           "net5.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "C:\\Program Files\\dotnet\\library-packs": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "C:\\Users\\francisco.ruiz\\Documents\\Visual Studio 2019\\Projects\\ProdBlinds_Fco\\ProdBlinds\\bin": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://www.nuget.org": {}
         },
         "frameworks": {
           "net5.0": {

@@ -1,3 +1,4 @@
+using DesignPatterns.Repository;
 using DesignPatternsASP.Configuration;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -10,6 +11,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Tools.Earn;
+using DesignPatterns.Models.Data;
+using Microsoft.EntityFrameworkCore;
 
 namespace DesignPatternsASP
 {
@@ -38,6 +41,12 @@ namespace DesignPatternsASP
                     Configuration.GetSection("MyConfig").GetValue<decimal>("ForeignPercentage"),
                     Configuration.GetSection("MyConfig").GetValue<decimal>("Extra"));
             });
+
+            services.AddDbContext<DesignPatternsContext>(options => 
+            {
+                options.UseSqlServer(Configuration.GetConnectionString("ConnectionSQL"));
+            });
+            services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

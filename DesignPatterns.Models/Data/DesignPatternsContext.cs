@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Metadata;
 
 #nullable disable
 
-namespace DesignPatterns.Models
+namespace DesignPatterns.Models.Data
 {
     public partial class DesignPatternsContext : DbContext
     {
@@ -24,8 +24,7 @@ namespace DesignPatterns.Models
         {
             if (!optionsBuilder.IsConfigured)
             {
-#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-                optionsBuilder.UseSqlServer("Server=localhost;Database=DesignPatterns;User Id=sa;Password=515t3m@5;TrustServerCertificate=true;");
+                //optionsBuilder.UseSqlServer("Server=localhost;Database=DesignPatterns;User Id=sa;Password=515t3m@5;");
             }
         }
 
@@ -43,6 +42,7 @@ namespace DesignPatterns.Models
                     .IsUnicode(false);
 
                 entity.Property(e => e.Style)
+                    .IsRequired()
                     .HasMaxLength(50)
                     .IsUnicode(false);
             });
