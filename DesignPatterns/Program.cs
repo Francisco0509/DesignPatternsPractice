@@ -2,6 +2,7 @@
 using DesignPatterns.BuilderPattern;
 using DesignPatterns.Models;
 using DesignPatterns.RepositoryPattern;
+using DesignPatterns.StatePattern;
 using DesignPatterns.StrategyPattern;
 using DesignPatterns.UnitOfWorkPattern;
 using System;
@@ -111,17 +112,31 @@ namespace DesignPatterns
             //context.Run();
 
             //Patrón Builder
-            var builder = new PreparedAlcoholicDrinksConcrete();
-            var barmanDirector = new BarmanDirector(builder);
+            //var builder = new PreparedAlcoholicDrinksConcrete();
+            //var barmanDirector = new BarmanDirector(builder);
 
-            barmanDirector.PrepareMargarita();
+            //barmanDirector.PrepareMargarita();
 
-            var preparedDrink = builder.GetPreparedDrink();
-            Console.WriteLine(preparedDrink.Result);
+            //var preparedDrink = builder.GetPreparedDrink();
+            //Console.WriteLine(preparedDrink.Result);
 
-            barmanDirector.PreparePinaColada();
-            preparedDrink = builder.GetPreparedDrink();
-            Console.WriteLine(preparedDrink.Result);
+            //barmanDirector.PreparePinaColada();
+            //preparedDrink = builder.GetPreparedDrink();
+            //Console.WriteLine(preparedDrink.Result);
+
+            //Patrón State
+            var customerContext = new CustomerContext();
+            Console.WriteLine(customerContext.GetState());
+            customerContext.Request(100);
+            Console.WriteLine(customerContext.GetState());
+            customerContext.Request(50);
+            Console.WriteLine(customerContext.GetState());
+            customerContext.Request(100);
+            Console.WriteLine(customerContext.GetState());
+            customerContext.Request(50);
+            Console.WriteLine(customerContext.GetState());
+            customerContext.Request(50);
+            Console.WriteLine(customerContext.GetState());
             Console.ReadKey();
         }
     }
