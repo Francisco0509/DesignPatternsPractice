@@ -1,6 +1,7 @@
 ﻿//using DesignPatterns.DependencyInjectionPattern;
 using DesignPatterns.Models;
 using DesignPatterns.RepositoryPattern;
+using DesignPatterns.StrategyPattern;
 using DesignPatterns.UnitOfWorkPattern;
 using System;
 using System.Linq;
@@ -34,8 +35,8 @@ namespace DesignPatterns
 
             
 
-            using (var context = new DesignPatternsContext())
-            {
+            //using (var context = new DesignPatternsContext())
+            //{
                 //var list = context.Beers.ToList();
                 //foreach (var beer in list)
                 //{
@@ -79,26 +80,34 @@ namespace DesignPatterns
                 /************/
                 /*UnitOfWork*/
                 /************/
-                var unitOfWork = new UnitOfWork(context);
-                var beers = unitOfWork.Beers;
-                var beer = new Beer()
-                {
-                    Name = "Fuller",
-                    Style = "Porter"
-                };
+                //var unitOfWork = new UnitOfWork(context);
+                //var beers = unitOfWork.Beers;
+                //var beer = new Beer()
+                //{
+                //    Name = "Fuller",
+                //    Style = "Porter"
+                //};
 
-                beers.Add(beer);
+                //beers.Add(beer);
 
-                var brands = unitOfWork.Brands;
-                var brand = new Brand()
-                {
-                    Name = "Fuller"
-                };
+                //var brands = unitOfWork.Brands;
+                //var brand = new Brand()
+                //{
+                //    Name = "Fuller"
+                //};
 
-                brands.Add(brand);
+                //brands.Add(brand);
 
-                unitOfWork.Save();
-            }
+                //unitOfWork.Save();
+            //}
+
+            //Patrón Strategy
+            var context = new Context(new CarStrategy());
+            context.Run();
+            context.Strategy = new MotoStrategy();
+            context.Run();
+            context.Strategy = new BicycleStrategy();
+            context.Run();
 
             Console.ReadKey();
         }

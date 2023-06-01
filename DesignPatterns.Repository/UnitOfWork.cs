@@ -17,7 +17,7 @@ namespace DesignPatterns.Repository
         {
             get
             {
-                return _beers == null ? _beers = new Repository<Beer>(_context) : _beers;
+                return _beers == null ? _beers = new Repository<Beer>(_context) : _beers; //Singleton => Si el objeto no existe se crea, pero si ya existe ese objeto ya creado es el que se devuelve
             }
         }
 
@@ -25,7 +25,7 @@ namespace DesignPatterns.Repository
         {
             get
             {
-                return _brands == null ? _brands = new Repository<Brand>(_context) : _brands;
+                return _brands == null ? _brands = new Repository<Brand>(_context) : _brands; //Singleton => Si el objeto no existe se crea, pero si ya existe ese objeto ya creado es el que se devuelve
             }
         }
 
