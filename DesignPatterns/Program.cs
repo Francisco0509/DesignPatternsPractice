@@ -1,4 +1,5 @@
 ﻿//using DesignPatterns.DependencyInjectionPattern;
+using DesignPatterns.BuilderPattern;
 using DesignPatterns.Models;
 using DesignPatterns.RepositoryPattern;
 using DesignPatterns.StrategyPattern;
@@ -33,82 +34,94 @@ namespace DesignPatterns
             //var dringWithBeer = new DrinkWithBeer(10, 1, beer);
             //dringWithBeer.Build();
 
-            
+
 
             //using (var context = new DesignPatternsContext())
             //{
-                //var list = context.Beers.ToList();
-                //foreach (var beer in list)
-                //{
-                //    Console.WriteLine(beer.Name);
-                //}
+            //var list = context.Beers.ToList();
+            //foreach (var beer in list)
+            //{
+            //    Console.WriteLine(beer.Name);
+            //}
 
-                //var beerRepository = new BeerRepository(context);
-                //var beer = new Beer();
-                //beer.Name = "Corona";
-                //beer.Style = "Pilsner";
+            //var beerRepository = new BeerRepository(context);
+            //var beer = new Beer();
+            //beer.Name = "Corona";
+            //beer.Style = "Pilsner";
 
-                //beerRepository.Add(beer);
-                //beerRepository.Save();
+            //beerRepository.Add(beer);
+            //beerRepository.Save();
 
-                //foreach (var item in beerRepository.Get())
-                //{
-                //    Console.WriteLine($"Cerveza {item.Name} de estilo {item.Style}");
-                //}
+            //foreach (var item in beerRepository.Get())
+            //{
+            //    Console.WriteLine($"Cerveza {item.Name} de estilo {item.Style}");
+            //}
 
-                //var beerRepository = new Repository<Beer>(context);
-                //var beer = new Beer() { Name = "Fuller", Style = "Strong Ale" };
-                //beerRepository.Add(beer);
-                //beerRepository.Save();
+            //var beerRepository = new Repository<Beer>(context);
+            //var beer = new Beer() { Name = "Fuller", Style = "Strong Ale" };
+            //beerRepository.Add(beer);
+            //beerRepository.Save();
 
-                //foreach (var item in beerRepository.Get())
-                //{
-                //    Console.WriteLine($"Cerveza {item.Name} de estilo {item.Style}");
-                //}
+            //foreach (var item in beerRepository.Get())
+            //{
+            //    Console.WriteLine($"Cerveza {item.Name} de estilo {item.Style}");
+            //}
 
-                //var brandRepository = new Repository<Brand>(context);
+            //var brandRepository = new Repository<Brand>(context);
 
-                //var brand = new Brand();
-                //brand.Name = "Fuller";
-                //brandRepository.Add(brand);
-                //brandRepository.Save();
-                //foreach (var item in brandRepository.Get())
-                //{
-                //    Console.WriteLine($"La nueva marca de cerveza {item.Name}");
-                //}
+            //var brand = new Brand();
+            //brand.Name = "Fuller";
+            //brandRepository.Add(brand);
+            //brandRepository.Save();
+            //foreach (var item in brandRepository.Get())
+            //{
+            //    Console.WriteLine($"La nueva marca de cerveza {item.Name}");
+            //}
 
-                /************/
-                /*UnitOfWork*/
-                /************/
-                //var unitOfWork = new UnitOfWork(context);
-                //var beers = unitOfWork.Beers;
-                //var beer = new Beer()
-                //{
-                //    Name = "Fuller",
-                //    Style = "Porter"
-                //};
+            /************/
+            /*UnitOfWork*/
+            /************/
+            //var unitOfWork = new UnitOfWork(context);
+            //var beers = unitOfWork.Beers;
+            //var beer = new Beer()
+            //{
+            //    Name = "Fuller",
+            //    Style = "Porter"
+            //};
 
-                //beers.Add(beer);
+            //beers.Add(beer);
 
-                //var brands = unitOfWork.Brands;
-                //var brand = new Brand()
-                //{
-                //    Name = "Fuller"
-                //};
+            //var brands = unitOfWork.Brands;
+            //var brand = new Brand()
+            //{
+            //    Name = "Fuller"
+            //};
 
-                //brands.Add(brand);
+            //brands.Add(brand);
 
-                //unitOfWork.Save();
+            //unitOfWork.Save();
             //}
 
             //Patrón Strategy
-            var context = new Context(new CarStrategy());
-            context.Run();
-            context.Strategy = new MotoStrategy();
-            context.Run();
-            context.Strategy = new BicycleStrategy();
-            context.Run();
+            //var context = new Context(new CarStrategy());
+            //context.Run();
+            //context.Strategy = new MotoStrategy();
+            //context.Run();
+            //context.Strategy = new BicycleStrategy();
+            //context.Run();
 
+            //Patrón Builder
+            var builder = new PreparedAlcoholicDrinksConcrete();
+            var barmanDirector = new BarmanDirector(builder);
+
+            barmanDirector.PrepareMargarita();
+
+            var preparedDrink = builder.GetPreparedDrink();
+            Console.WriteLine(preparedDrink.Result);
+
+            barmanDirector.PreparePinaColada();
+            preparedDrink = builder.GetPreparedDrink();
+            Console.WriteLine(preparedDrink.Result);
             Console.ReadKey();
         }
     }
